@@ -5,9 +5,9 @@ This demo code aims to give you an overview of the process of training an ML mod
 
 The walk-through trains a simple model on a small set of housing data. The goal is to predict housing prices based on zip and square-footage. You want the root-mean-squared error of your prediction to be as small as possible. You will learn how to do that by:
 
-1. How to visualize the data.
-2. How to train an evaluate a model.
-3. How to improve model performance by correctly encoding categorical data.
+1. Visualize the data.
+2. Training and evaluating a ML model.
+3. Improving the model's performance by correctly encoding categorical data.
 
 ## Usage
 You can learn more about running python code in the Jupyter IDE [here](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Running%20Code.html). Below you can learn how to launch the Jupyter environment with the preloaded data and code you need.
