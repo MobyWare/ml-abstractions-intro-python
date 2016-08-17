@@ -23,7 +23,7 @@ RUN apt-get install -y curl grep sed dpkg && \
 RUN /opt/conda/bin/conda install jupyter -y --quiet && \
     mkdir /opt/notebooks
 
-ADD linear-regression-basics.ipynb /opt/notebooks
+ADD index.ipynb /opt/notebooks
 ADD home_data.csv /opt/notebooks
 ADD ohe.py /opt/notebooks
 
