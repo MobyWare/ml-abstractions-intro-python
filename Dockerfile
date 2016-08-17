@@ -4,6 +4,9 @@ MAINTAINER Mohinder Dick <mohinder.dick@gmail.com>
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 
+USER root
+
+#This code was provided by Kamil Kwiek <kamil.kwiek@continuum.io>
 RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificates \
     libglib2.0-0 libxext6 libsm6 libxrender1 \
     git mercurial subversion
@@ -20,9 +23,12 @@ RUN apt-get install -y curl grep sed dpkg && \
     rm tini.deb && \
     apt-get clean
 
+#Mohinder added the rest to start up jupyter automatically and to load local notbooks
 RUN /opt/conda/bin/conda install jupyter -y --quiet && \
     mkdir /opt/notebooks
 
+
+# You could modfiy these adds to get your own data in
 ADD index.ipynb /opt/notebooks
 ADD home_data.csv /opt/notebooks
 ADD ohe.py /opt/notebooks
