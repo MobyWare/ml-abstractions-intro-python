@@ -1,4 +1,4 @@
-# Abstractions - Introduction to Machine Learning (ML) Demo Code
+# Zoll Medical Corporation - Introduction to Machine Learning (ML) Demo Code
 
 ## Overview
 This demo code aims to give you an overview of the process of training an ML model using the [scikit-learn](http://scikit-learn.org/), which is a Python library. We will run it in an IDE called Jupyter that you can use from your browser. Jupyter supports several languages including Python. 
